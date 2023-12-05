@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Movies</title>
+
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+
+  <style>
+
+    body{
+      background: black;
+    }
+
+    .navbar{
+      border-radius: .5rem .5rem 0 0;
+    }
+
+    .nav-tabs .nav-link {
+      color: azure;
+      font-weight: bold;
+    }
+
+    .nav-tabs .nav-link.active {
+      background-color: #4d5da0;
+    }
+
+    section #imgsBanner img{
+      height: 12rem;
+      border-radius: 0 0 .5rem .5rem;
+    }
+
+    section #imgsCards img{
+      height: 20rem;
+    }
+
+    section .card{
+      margin-bottom: 4rem;
+      position: relative;
+    }
+
+    section .card-body button{
+      position: absolute;
+      bottom: .8rem;
+      font-weight: bold;
+    }
+
+    section .card-text{
+      margin-bottom: 3rem;
+    }
+
+    #desenhos h2{
+      color: white;
+    }
+
+  </style>
+
+</head>
+<body>
+    <main class="container mt-3">
+
+      <header class="navbar navbar-dark bg-dark px-3">
+
+        <h1 class="navbar-brand">Filmes</h1>
+
+        <button type="button" class="navbar-toggler d-md-none" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="d-md-none collapse navbar-collapse pt-3" id="navbar">
+          <ul class="nav nav-pills flex-column" role="tablist">
+            <li class="nav-item" role="presentation" data-bs-toggle="pill"><a class="nav-link active" href="#">Filmes favoritos</a></li>
+            <li class="nav-item" role="presentation" data-bs-toggle="pill"><a class="nav-link" href="#">Livros recomendados</a></li>
+          </ul>
+        </nav>
+
+        <nav class="d-none d-md-block pt-3 mb-2" data-bs-spy="scroll" data-bs-target="#containerNav" id="navbar">
+          <ul class="nav nav-pills">
+            <li class="nav-item" role="presentation" data-bs-toggle="pill"><a class="nav-link active" href="#">Filmes favoritos</a></li>
+            <li class="nav-item" role="presentation" data-bs-toggle="pill"><a class="nav-link" href="#">Livros recomendados</a></li>
+          </ul>
+        </nav>
+
+      </header>
+
+      <section class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner" id="imgsBanner">
+
+          <div data-bs-interval="3000" class="carousel-item active">
+            <img class="d-block w-100" src="./images/bannerviongadores.jpg" alt="">
+          </div>
+
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="./images/banneraranha.jpg" alt="">
+          </div>
+
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="./images/banneraranha2.jpg" alt="">
+          </div>
+
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="./images/bannerbatmam.jpg" alt="">
+          </div>
+
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="./images/bannerclube.jpg" alt="">
+          </div>
+
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="./images/bannerjoker[.jpg" alt="">
+          </div>
+
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-100" src="./images/bannerpool.jpg" alt="">
+          </div>
+
+        </div>
+
+      </section>
+
+    <hr/>
+
+      <section> 
+
+        <nav class="nav nav-tabs">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#filmes">Filmes</button>
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#desenhos">Desenhos</button>
+        </nav>
+
+        <article class="tab-content mt-3" id="imgsCards">
+
+          <div class="tab-pane active container" id="filmes">
+
+            <div class="row">
+
+              <div class="card text-white bg-dark col-sm-12 col-md-6 col-lg-4">
+                <img class="card-img-top" src="./images/clube.jpg" alt="">
+
+                <div class="card-body">
+
+                  <h5 class="card-title">Clube da luta</h5>
+
+                  <p class="card-text">
+                    “Clube da Luta” é um filme que retrata a vida de um executivo insatisfeito, 
+                    Jack, que encontra alívio para sua insônia em grupos de auto-ajuda e combates 
+                    corporais violentos, organizados pelo misterioso Tyler Durden.
+                  </p>
+
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary col-10">Assistir</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="card text-white bg-dark col-sm-12 col-md-6 col-lg-4">
+                <img class="card-img-top" src="./images/ultimo.webp" alt="">
+
+                <div class="card-body">
+
+                  <h5 class="card-title">Até o ultimo homem</h5>
+
+                  <p class="card-text">
+                    “Até o Último Homem” é um filme que retrata a história de Desmond T. Doss (Andrew Garfield), 
+                    um médico do exército que se recusa a pegar em uma arma durante a Segunda Guerra Mundial. Apesar disso, 
+                    ele salva mais de 75 homens durante a Batalha de Okinawa, sem disparar um único tiro.
+                  </p>
+
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary col-10">Assistir</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="card text-white bg-dark col-sm-12 col-md-6 col-lg-4">
+                <img class="card-img-top" src="./images/truman.jpg" alt="">
+
+                <div class="card-body">
+
+                  <h5 class="card-title">Show de Truman</h5>
+
+                  <p class="card-text">
+                    “O Show de Truman” é um filme que retrata a vida de Truman Burbank (Jim Carrey), 
+                    um homem que descobre que sua vida inteira é na verdade um reality show televisionado 
+                    24 horas por dia, sem o seu conhecimento.
+                  </p>
+
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary col-10">Assistir</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="card text-white bg-dark col-sm-12 col-md-6 col-lg-4">
+                <img class="card-img-top" src="./images/carter.jpg" alt="">
+
+                <div class="card-body">
+
+                  <h5 class="card-title">Clube da luta</h5>
+
+                  <p class="card-text">
+                    “Treinador Carter” é um filme baseado na história real do treinador de basquete Ken Carter 
+                    (interpretado por Samuel L. Jackson), que suspendeu seu time invicto de basquete do ensino médio 
+                    devido a maus resultados acadêmicos1. O filme explora a ética profissional, acadêmica e atlética.
+                  </p>
+
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary col-10">Assistir</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="tab-pane container" id="desenhos">
+
+            <h2>Em breve novidades !</h2>
+
+          </div>
+
+        </article>
+
+      </section>
+
+    </main>
+
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
